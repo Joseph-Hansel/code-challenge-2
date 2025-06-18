@@ -25,7 +25,7 @@ This project has been developed using:
 
 To set up this project, feel free to **fork** and **clone** the container-repository and run the index.html file alongside the rest of the files.
 
-You can as well [go live](#live)
+You can as well [go live](https://joseph-hansel.github.io/code-challenge-2/)
 
 
 ## Contributers.
@@ -33,9 +33,6 @@ You can as well [go live](#live)
 Authors:
 
 * Joseph Hansel  -- Software Developer.
-
-<a id="live"></a>
-[![Live page](https://joseph-hansel.github.io/code-challenge-2/)
 
 >[!NOTE]
 > For assignment purposes.
