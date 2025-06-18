@@ -1,0 +1,12 @@
+#main-page {
+    text-align: center;
+}
+
+#main-page img {
+    width: 100%;
+}
+
+#actions ul {
+    display: flex;
+    justify-content:space-around;
+}
