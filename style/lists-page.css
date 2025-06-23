@@ -45,13 +45,26 @@
 
   #list-section {
     text-align: center;
-    padding: 10%;
-    margin-bottom: 25%;
+    padding: 5%;
+    margin: 0%;
   }
 
   #addition-form {
     padding: 5%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 25%;
+    margin: 0%;
   }
+
+#list-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+  padding: 5%;
+  flex-flow: row wrap;
+}
+
+.list-display-content {
+  padding: 2%;
+}

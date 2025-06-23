@@ -17,3 +17,11 @@
 //       }
 //     }
 //   }
+
+
+
+
+let menu = function(){
+    let list = document.getElementById()
+    console.log("");
+}
