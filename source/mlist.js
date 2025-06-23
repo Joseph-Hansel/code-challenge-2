@@ -1,3 +1,8 @@
+function updateLists(){
+        let listTitle = document.getElementById("list-title")
+        listTitle.innerText = `${hName}'s ${eName}`
+    }
+
 document.addEventListener('DOMContentLoaded', () => {
     const guestForm = document.getElementById('guest-form');
     const guestNameInput = document.getElementById('guest-name');

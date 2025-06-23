@@ -44,31 +44,8 @@ function hostEvent(){
     }
 
     function updateLists(){
-        let additionButtons = document.getElementById("addition-form")
-        // additionButtons.innerHTML = 
-        //     `<div>
-
-
-        //         <button type="button">Add guests to list one.</button>
-
-
-        //     </div>
-
-        //     <div>
-
-
-        //         <button type="button" style="display: block;">Add guests to list two.</button>
-
-
-        //     </div>
-
-        //     <div>
-
-
-        //         <button type="button" style="display: none;">Add guests</button>
-
-
-        //     </div>`
+        let listTitle = document.getElementById("list-title")
+        listTitle.innerText = `${hName}'s ${eName}`
     }
 }
 hostEvent();
