@@ -32,6 +32,8 @@ function hostEvent(){
                     <p style="text-align: center">...</p>
 
                     <p>To initiate a different event, click this <a href="./host.html" style="text-decoration: none; color : #1B769D;">INITIATE link</a>.</p>`
+
+                    updateLists();
                 }
             }else {
                 alert(`Please enter a valid value.`)
@@ -39,6 +41,34 @@ function hostEvent(){
             }
         }
         confirm();
+    }
+
+    function updateLists(){
+        let additionButtons = document.getElementById("addition-form")
+        // additionButtons.innerHTML = 
+        //     `<div>
+
+
+        //         <button type="button">Add guests to list one.</button>
+
+
+        //     </div>
+
+        //     <div>
+
+
+        //         <button type="button" style="display: block;">Add guests to list two.</button>
+
+
+        //     </div>
+
+        //     <div>
+
+
+        //         <button type="button" style="display: none;">Add guests</button>
+
+
+        //     </div>`
     }
 }
 hostEvent();
