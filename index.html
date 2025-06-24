@@ -97,7 +97,7 @@
 
                     <label for="event-name">Name of the event: </label>
 
-                    <input type="text" id="event-name" placeholder="Birthday">
+                    <input type="text" id="event-name" placeholder="Birthday" value="Birthday">
 
 
                 </p>
@@ -107,7 +107,7 @@
 
                     <label for="host-name">Name of the host: </label>
 
-                    <input type="text" id="host-name" placeholder="Ibsituh">
+                    <input type="text" id="host-name" placeholder="Ibsituh" value="Ibsituh">
 
 
                 </p>
@@ -131,21 +131,42 @@
         </section>
 
         <section class="formation" class="pages" id="list-section">
-        <h2 id="list-title"></h2>
-        <form id="guest-form">
-            <input type="text" id="guest-name" placeholder="Enter guest name" required>
-            <select id="guest-category" required>
-                <option value="" disabled selected>Select category</option>
-                <option value="friend">Friend</option>
-                <option value="family">Family</option>
-                <option value="colleague">Colleague</option>
-            </select>
-            <button type="submit">Add Guest</button>
-        </form>
-        <ul id="guestList"></ul>
-        <button id="toggle-rsvp">Attending</button>
-        <button id="clear-list">Clear List</button>
-    </section>
+
+
+            <h2 id="list-title"></h2>
+
+            <form id="guest-form">
+
+
+                <input type="text" id="guest-name" placeholder="Enter guest name" required>
+
+                <select id="guest-category" required>
+
+
+                    <option value="" disabled selected>Select category</option>
+
+                    <option value="friend">Family</option>
+
+                    <option value="family">Friend</option>
+
+                    <option value="colleague">Colleague</option>
+
+
+                </select>
+
+                <button type="submit">Invite.</button>
+
+
+            </form>
+
+            <ul id="guestList"></ul>
+
+            <button id="toggle-rsvp">Attending</button>
+
+            <button id="clear-list">Clear List</button>
+
+            
+        </section>
 
 
     </section>
