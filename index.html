@@ -12,9 +12,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./style/main.css">
-
-    <link rel="stylesheet" href="./style/home-page.css">
+    <link rel="stylesheet" href="./style.css">
 
     <title>GreatEvents.com/Home</title>
 
@@ -36,20 +34,6 @@
 
         </section>
 
-        <nav>
-
-
-            <a href="./index.html" title="Home">Home Page.</a>
-
-            <a href="#about" title="About Section">About</a>
-
-            <a href="./html/host.html" title="Hosting page">Host an event.</a>
-
-            <a href="./html/lists.html" title="Lists page">Lists</a>
-
-
-        </nav>
-
 
     </header>
 
@@ -62,14 +46,6 @@
             <h3>Hi there,</h3>
 
             <p>Welcome to GreatEvents.com.</p>
-
-
-        </div>
-
-        <div>
-
-
-            <img src="./assets/images/jordon-conner-tIr-PWgSYB4-unsplash (1).jpg" alt="Night party." title="Night Party" style="size: 5%;">
 
 
         </div>
@@ -98,15 +74,78 @@
             <ul>
 
 
-                <li><a href="./html/host.html">Host</a> an event.</li>
+                <li><a href="#hide">Host</a> an event.</li>
 
-                <li><a href="./html/lists.html">Request for invitations</a> to events.</li>
+                <li><a href="#list-section">Invite guests</a> to events.</li>
 
 
             </ul>
 
 
         </div>
+
+        <section class="pages" id="hide">
+
+
+            <form action="" id="host-form">
+
+
+                <p>Please fill in the form below to initiate a new event.</p>
+
+                <p>
+
+
+                    <label for="event-name">Name of the event: </label>
+
+                    <input type="text" id="event-name" placeholder="Birthday">
+
+
+                </p>
+
+                <p>
+
+
+                    <label for="host-name">Name of the host: </label>
+
+                    <input type="text" id="host-name" placeholder="Ibsituh">
+
+
+                </p>
+                
+                <p>
+
+
+                    <label for="event-date">Date of the event: </label>
+
+                    <input type="date" name="event-date" id="event-date">
+
+
+                </p>
+
+                <input type="button" value="submit" id="host-submit-button">
+
+
+            </form>
+
+
+        </section>
+
+        <section class="formation" class="pages" id="list-section">
+        <h2 id="list-title"></h2>
+        <form id="guest-form">
+            <input type="text" id="guest-name" placeholder="Enter guest name" required>
+            <select id="guest-category" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+            </select>
+            <button type="submit">Add Guest</button>
+        </form>
+        <ul id="guestList"></ul>
+        <button id="toggle-rsvp">Attending</button>
+        <button id="clear-list">Clear List</button>
+    </section>
 
 
     </section>
@@ -121,7 +160,7 @@
 
     </footer>
 
-    <script src="./source/main.js"></script>
+    <script src="./index.js"></script>
 
 
 </body>
