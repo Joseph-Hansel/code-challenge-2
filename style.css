@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    background-color: #FDF8EC;
+    color: #0C3546;
+}
+
+header, footer {
+    background-color: #303036;
+    color: #BFB1C1;
+    text-align: center;
+    padding: 1%;
+}
+
+header {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#masthead h1 {
+    padding: 2%;
+}
+
+#hide {
+    padding-top: 2%;
+}
+
+#masthead h1 a {
+    text-decoration: none;
+    color: #BFB1C1;
+}
+
+#masthead h1 a:hover {
+    color: beige;
+}
+
+#main-page {
+    text-align: center;
+}
+
+#main-page img {
+    width: 100%;
+}
+
+#actions ul {
+    display: flex;
+    justify-content:space-around;
+}
+
+#back-to-top {
+    color: #BFB1C1;
+}
+
+#host-form {
+    display:flexbox;
+    justify-self: center;
+    padding: 10%;
+    margin: 10%;
+    background-color: #303036;
+    color: #BFB1C1;
+    border-radius: 10%;
+}
+
+#list-section {
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+
+#addition-form {
+      padding: 5%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0%;
+}
+
+#list-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
+    padding: 5%;
+    flex-flow: row wrap;
+}
+
+.list-display-content {
+    padding: 2%;
+}
+
+footer {
+    margin-top: 10%;
+}
