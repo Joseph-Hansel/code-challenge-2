@@ -46,6 +46,8 @@ function hostEvent(){
     }
 
     function updateLists(){
+        let eName = eventName.value.trim();
+        let hName = hostName.value.trim();
         let listTitle = document.getElementById("list-title")
         listTitle.innerText = `${hName}'s ${eName}`
     }
