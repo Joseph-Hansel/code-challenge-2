@@ -8,12 +8,11 @@ function hostEvent(){
     eDate = eventDate.value;
     let hostSubmitButton = document.getElementById("host-submit-button")
 
-    // (Event) Click submit button.
     hostSubmitButton.addEventListener("click", function(){
         hostSubmitResponse()
     })
 
-    function hostSubmitResponse(eventName, hostName, eventDate){
+    function hostSubmitResponse(eName, hName, eDate){
         function confirm(){
             let answer = prompt(`Hi ${hName}, enter T (for true) if the following details are correct. Otherwise, enter F (for false).
                 Name of Event: ${eName}
