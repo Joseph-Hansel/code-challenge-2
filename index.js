@@ -1,7 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    hostEvent();
-});
-
 function hostEvent(){
 
     let eventName = document.getElementById("event-name");
@@ -50,12 +46,8 @@ function hostEvent(){
     }
 }
 
-function updateLists(){
-        let listTitle = document.getElementById("list-title")
-        listTitle.innerText = `${hName}'s ${eName}`
-    }
-
 document.addEventListener('DOMContentLoaded', () => {
+    hostEvent();
     const guestForm = document.getElementById('guest-form');
     const guestNameInput = document.getElementById('guest-name');
     const guestCategorySelect = document.getElementById('guest-category');
