@@ -1,15 +1,20 @@
 function hostEvent(){
 
     let eventName = document.getElementById("event-name");
-    eName = eventName.value;
+    eName = eventName.value.trim;
     let hostName = document.getElementById("host-name");
-    hName = hostName.value;
+    hName = hostName.value.trim;
     let eventDate = document.getElementById("event-date");
-    eDate = eventDate.value;
+    eDate = eventDate.value.trim;
     let hostSubmitButton = document.getElementById("host-submit-button")
 
     hostSubmitButton.addEventListener("click", function(){
-        hostSubmitResponse()
+        
+        if (!eName || !hName || !eDate) {
+            alert("Please fill in all fields.");
+            return;
+        }
+        hostSubmitResponse(eName, hName, eDate)
     });
 
     function hostSubmitResponse(eName, hName, eDate){
