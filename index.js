@@ -13,7 +13,8 @@ function hostEvent(){
         if (!eName || !hName || !eDate) {
             alert("Please fill in all fields.");
             return;
-        }
+        };
+
         hostSubmitResponse(eName, hName, eDate)
     });
 
@@ -25,7 +26,7 @@ function hostEvent(){
             if (answer == "T" || answer == "F"){
                 if (answer == "F"){
                     alert(`Fill in the form once more.`)
-                }
+                };
                 if (answer == "T"){
                     let hiddenForm = document.getElementById("hide");
                     hiddenForm.innerHTML = `<form action="" id="host-form">
@@ -36,22 +37,22 @@ function hostEvent(){
                     <p><a href="#list-section" style="text-decoration: none; color : #1B769D;">View</a> the list.</p>`
 
                     updateLists();
-                }
+                };
             }else {
                 alert(`Please enter a valid value.`)
                 confirm();
-            }
-        }
+            };
+        };
         confirm();
-    }
+    };
 
     function updateLists(){
         let eName = eventName.value.trim();
         let hName = hostName.value.trim();
         let listTitle = document.getElementById("list-title")
         listTitle.innerText = `${hName}'s ${eName}`
-    }
-}
+    };
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     hostEvent();
@@ -59,50 +60,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const guestNameInput = document.getElementById('guest-name');
     const guestCategorySelect = document.getElementById('guest-category');
     const guestList = document.getElementById('guestList');
-guestForm.addEventListener('submit', function(e) {
-    e.preventDefault();
 
-    const name = guestNameInput.value.trim();
-    const category = guestCategorySelect.value;
+    guestForm.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-    if (!name || !category) return;
+        const name = guestNameInput.value.trim();
+        const category = guestCategorySelect.value;
 
-    const li = document.createElement('li');
-    li.textContent = `${name} (${category.charAt(0).toUpperCase() + category.slice(1)})`;
+        if (!name || !category) return;
 
-    // Optional: Add a remove button for each guest
-    const removeBtn = document.createElement('button');
-    removeBtn.textContent = 'Remove';
-    removeBtn.type = 'button';
-    removeBtn.addEventListener('click', () => {
-        guestList.removeChild(li);
-    });
+        const li = document.createElement('li');
+        li.textContent = `${name} (${category.charAt(0).toUpperCase() + category.slice(1)})`;
 
-    li.appendChild(removeBtn);
-    guestList.appendChild(li);
+        // Optional: Add a remove button for each guest
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.type = 'button';
+        removeBtn.addEventListener('click', () => {
+            guestList.removeChild(li);
+        });
 
-    guestForm.reset();
-    guestCategorySelect.selectedIndex = 0;
-    
-    //clear the input field
-    guestNameInput.value = '';
+        li.appendChild(removeBtn);
+        guestList.appendChild(li);
 
-    //clear all guests
-    clearListButton = document.getElementById('clear-list');
-    clearListButton.addEventListener('click', () => {
-        guestList.innerHTML = '';
-    });
+        guestForm.reset();
+        guestCategorySelect.selectedIndex = 0;
+        
+        //clear the input field
+        guestNameInput.value = '';
 
-    const rsvpButton = document.createElement('rsvp-button');
-    rsvpButton.textContent = 'attending';
-    rsvpButton.className = 'edit-guest';
-    rsvpButton.addEventListener('click', () => {
-        if (rsvpButton.textContent === 'attending') {
-            rsvpButton.textContent = 'not attending';
-            rsvpButton.className = 'not-attending';
-        } else {
-            rsvpButton.textContent = 'attending';
-            rsvpButton.className = 'edit-guest';
-        }
+        //clear all guests
+        clearListButton = document.getElementById('clear-list');
+        clearListButton.addEventListener('click', () => {
+            guestList.innerHTML = '';
+        });
+
+        const rsvpButton = document.createElement('button');
+        rsvpButton.textContent = 'attending';
+        rsvpButton.className = 'edit-guest';
+        rsvpButton.addEventListener('click', () => {
+            if (rsvpButton.textContent === 'attending') {
+                rsvpButton.textContent = 'not attending';
+                rsvpButton.className = 'not-attending';
+            } else {
+                rsvpButton.textContent = 'attending';
+                rsvpButton.className = 'edit-guest';
+            }
     });
 });})
