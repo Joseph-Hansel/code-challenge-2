@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    hostEvent();
+});
+
 function hostEvent(){
 
     let eventName = document.getElementById("event-name");
@@ -10,7 +14,7 @@ function hostEvent(){
 
     hostSubmitButton.addEventListener("click", function(){
         hostSubmitResponse()
-    })
+    });
 
     function hostSubmitResponse(eName, hName, eDate){
         function confirm(){
@@ -45,7 +49,6 @@ function hostEvent(){
         listTitle.innerText = `${hName}'s ${eName}`
     }
 }
-hostEvent();
 
 function updateLists(){
         let listTitle = document.getElementById("list-title")
